@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yan Almeida de Carvalho - Currículo</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    html{
+        scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+    }
+
+    h1, h2, h3 {
+      margin: 0;
+      font-weight: 400;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+    a{
+        color: black;
+        text-decoration: none;
+    }
+    a:hover{
+        color: blueviolet;
+    }
+
+    #pc ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    #pc ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+
+    #pc ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    section {
+      margin: 40px;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    article {
+      margin-bottom: 20px;
+    }
+
+    ul {
+      margin: 10px 0;
+      padding-left: 20px;
+    }
+    #cel select {
+        display: none;
+        margin: 10px 0;
+        padding: 10px;
+        font-size: 16px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+    }
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    @media screen and (max-width: 600px) {
+      header {
+        padding: 10px;
+      }
+      section {
+        margin: 20px;
+      }
+      footer {
+        padding: 10px;
+      }
+
+      nav ul {
+        display: none;
+      }
+
+      #cel select {
+        display: block;
+        margin: 10px 0;
+        padding: 10px;
+        font-size: 16px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Yan Almeida de Carvalho</h1>
+        <nav id="pc">
+            <ul>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#experience">Experiência</a></li>
+            <li><a href="#education">Educação</a></li>
+            <li><a href="#skills">Habilidades</a></li>
+            </ul>
+        </nav>
+        <nav id="cel">
+            <select onchange="window.location.href=this.value">
+              <option value="#about">Sobre</option>
+              <option value="#experience">Experiência</option>
+              <option value="#education">Educação</option>
+              <option value="#skills">Habilidades</option>
+            </select>
+          </nav>
+          
+  </header>
+
+  <section id="about">
+    <h2>Sobre</h2>
+    <p>Sou um desenvolvedor web apaixonado por criar experiências digitais envolventes e funcionais. Procuro oportunidades desafiadoras para utilizar minhas habilidades em front-end e aprimorar minhas competências técnicas enquanto colaboro com uma equipe dinâmica e inovadora.</p>
+    <p>Contato: <a href="mailto:yan.carvalho2@hotmail.com">yan.carvalho2@hotmail.com</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/yan-almeida-de-carvalho-53a170134/">linkedin.com/in/yan-almeida-de-carvalho-53a170134</a></p>
+  </section>
+
+  <section id="experience">
+    <h2>Experiência Profissional</h2>
+    <article>
+      <h3>Estágio em Desenvolvimento de Software - Mhr Inteligencia em Documento Digitais Eireli (Doc Ged Sistemas Eireli)</h3>
+      <p>Período: 28/03/2022 a 30/06/2022</p>
+      <ul>
+        <li>Desenvolvimento de melhorias no software utilizando a linguagem de programação C# na plataforma .NET.</li>
+        <li>Implementação de rotinas de manutenção corretiva.</li>
+        <li>Colaboração no desenvolvimento de um Diário Oficial eletrônico, utilizando banco de dados relacional SQL no Microsoft SQL Server.</li>
+      </ul>
+    </article>
+  </section>
+
+  <section id="education">
+    <h2>Educação</h2>
+    <article>
+      <h3>Engenharia de Computação - AREA 1 Wyden</h3>
+    </article>
+  </section>
+
+  <section id="skills">
+    <h2>Habilidades Técnicas</h2>
+    <ul>
+      <li>Desenvolvimento Front-end: HTML5, CSS3, JavaScript, React JS.</li>
+      <li>Desenvolvimento Back-end: Node.js, Express.js.</li>
+      <li>Banco de Dados: SQL, MongoDB.</li>
+      <li>Versionamento: Git, GitHub.</li>
+      <li>Ferramentas de Design: Adobe Photoshop, Adobe Illustrator.</li>
+      <li>Metodologias Ágeis: Scrum, Kanban.</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>Referências disponíveis mediante solicitação.</p>
+  </footer>
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+</body>
+</html>
+
+
